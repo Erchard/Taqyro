@@ -24,9 +24,43 @@ The stack should support this flow without requiring a custom backend, DevOps te
 Expo React Native + TypeScript
 ```
 
+### Initial Development Target
+
+The first implementation should run on Windows through Expo Web.
+
+This means the app can be opened in a desktop browser during early development, without requiring a physical smartphone or Android/iOS emulator.
+
+Initial development target:
+
+```text
+Windows → Expo Web → Browser preview
+```
+
+Later testing targets:
+
+```text
+Expo Go on a physical phone
+Android build
+iOS build
+```
+
+The first prototype should keep Firebase optional until the local question loop works.
+
+Recommended first technical milestone:
+
+```text
+Expo app starts
+→ first question appears
+→ user answers Yes / No / Not important
+→ local circle state updates
+→ user can continue to next question
+```
+
 #### Why
 
 Expo React Native allows building iOS and Android apps from one codebase.
+
+Expo Web also allows the same early app to run in a browser, which is useful for fast iteration on Windows.
 
 TypeScript makes the code safer and easier to maintain, especially when working with structured data such as questions, answers, users, circles, and actions.
 

@@ -38,6 +38,7 @@ Do not build people, groups, chats, maps, or offline actions until the question 
 ### 3. Version Overview
 
 ```text
+MVP 0.0 — Local Web Prototype
 MVP 0.1 — Core Question Loop
 MVP 0.2 — Save Result and Return
 MVP 0.3 — Real Circle and Invite
@@ -46,6 +47,57 @@ MVP 0.5 — Small Groups
 MVP 0.6 — Offline Actions
 MVP 1.0 — Public MVP
 ```
+
+---
+
+## MVP 0.0 — Local Web Prototype
+
+### Goal
+
+Create the first runnable version of the app on Windows through Expo Web.
+
+### Main Hypothesis
+
+> The core question loop can be understood and tested before the full backend exists.
+
+### Must Include
+
+* Expo React Native app with TypeScript
+* Browser launch on Windows through Expo Web
+* First screen is a question
+* Fixed answer options:
+
+  * Yes
+  * No
+  * Not important
+* Local starter question set
+* Local answer state
+* Local circle count simulation
+* Circle state display
+* Result after each answer
+* Continue to next question
+
+### Must Not Include
+
+* Firebase setup as a blocker
+* account registration
+* real users
+* real matching backend
+* profiles
+* chat
+* maps
+* groups
+* offline actions
+
+### Exit Criteria
+
+Move to MVP 0.1 only if:
+
+* the app starts reliably on Windows;
+* the first question appears immediately;
+* the answer flow feels clear;
+* `Not important` clearly does not narrow the circle;
+* the local prototype is good enough to connect to Firebase.
 
 ---
 

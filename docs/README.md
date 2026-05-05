@@ -126,6 +126,24 @@ Question → Answer → Circle narrows → Next question → Circle found → Ac
 
 ---
 
+## Current Project State
+
+The project currently contains product and technical documentation only.
+
+There is no app code yet.
+
+The next implementation step is to create an Expo React Native project with TypeScript and run the first prototype on Windows through Expo Web.
+
+The first prototype should validate the basic question loop before connecting the full Firebase backend:
+
+```text
+Question → Answer → Local circle update → Result → Next question
+```
+
+Mobile testing on a real phone should come after the web prototype feels clear and usable.
+
+---
+
 ## One-Sentence Description
 
 **Taqyro helps people answer meaningful questions, find others who answered the same way on what matters, and move from shared values to offline interaction.**
